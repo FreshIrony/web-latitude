@@ -7,12 +7,13 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="styles.css">
+	
     <title>Latitude - Home Page</title>
   </head>
   <body>
-      <div class="container">
-          <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-primary">
+		<div class="container" id="nav">
+          <nav class="navbar navbar-expand-md sticky-top">
               <a class="navbar-brand mb-0 h1" href="#">Latitude</a>
 
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -31,7 +32,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Comparison</a>
+                            <a class="nav-link" href="comparison.html">Comparison</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Data</a>
@@ -39,59 +40,66 @@
                   </ul>
               </div>
           </nav>
-      </div>
+		 </div>
 
       <br>
       <br>
 
-      <div class="container-fluid">
+		<div class="container">
             <div class="row">
-                    <div class="col-sm-7">
+                    <div class="col-lg-7">
                         <div class="card">
-                            <div class="card-header h3">
-                                Summary: Latitude vs X
-                            </div>
                             <div class="card-body">
-                                <p class="card-text">
-                                    <img src="images/Fig1.png" class="img-fluid pull-left">
-                                    The purpose of this project was to analyze how weather changes
-                                    as you get closer to the equator. To accomplish this analysis, we
-                                    first pulled data from the OpenWeatherMap API to assemble a
-                                    dataset on over 500 cities.
-                                    <br>
-                                    <br>
-                                    After assembling the dataset, we used Matplotlib to plot various
-                                    aspects of the weather vs latitude. Factors we looked at included:
-                                    temperature, cloudiness, wind speed, and humidity. This site provides the source data and
-                                    visualizations created as part of the analysis, as well as explanations and descriptions of any
-                                    trends and correlations witnessed.
-                                </p>
+								<h3 class="card-header">Summary: Latitude vs X</h3>
+								<br>
+								<div class="row">
+									<div class="col-12">
+										<img src="images/Fig1.png" class="img-thumbnail float-left">
+
+										The purpose of this project was to analyze how weather changes
+										as you get closer to the equator. To accomplish this analysis, we
+										first pulled data from the OpenWeatherMap API to assemble a
+										dataset on over 500 cities.
+										<br>
+										<br>
+										After assembling the dataset, we used Matplotlib to plot various
+										aspects of the weather vs latitude. Factors we looked at included:
+										temperature, cloudiness, wind speed, and humidity. This site provides the source data and
+										visualizations created as part of the analysis, as well as explanations and descriptions of any
+										trends and correlations witnessed.
+									</div>
+								</div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-sm-5">
+	<br>
+	<br>
+                    <div class="col-lg-5">
                         <div class="card">
-                            <div class="card-header h4">
-                                Visualizations
-                            </div>
                             <div class="card-body">
-                                <p class="card-test">
-                                    <div class="container-fluid">
-                                        <a href="maxtemperature.html"><img class="img-fluid" src="images/Fig1.png"></a>
-                                        <a href="humidity.html"><img class="img-fluid" src="images/Fig2.png"></a>
-                                    </div> 
-                                    <div class="container-fluid">
-                                        <a href="cloudiness.html"><img class="img-fluid" src="images/Fig3.png"></a>
-                                        <a href="windspeed.html"><img class="img-fluid" src="images/Fig4.png"></a>
-                                    </div>
-                                </p>
+								<h4 class="card-header">Visualizations</h4>
+								<br>
+									<a href="maxtemperature.html"><img class="img-responsive vis" src="images/Fig1.png"></a>
+									<a href="humidity.html"><img class="img-responsive vis" src="images/Fig2.png"></a>
+									<a href="cloudiness.html"><img class="img-responsive vis" src="images/Fig3.png"></a>
+									<a href="windspeed.html"><img class="img-responsive vis" src="images/Fig4.png"></a> 
                             </div>
                         </div>
                     </div>
                 </div>
-    </div>
+		</div>
 
+		
+		<footer class="footer">
+			<div class="container">
+			<span class="footer-text">
+				&copy; Copyright Coding Bootcamp 2019
+			</span>
+			</div>
+		</footer>
+		
+	
+	
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
